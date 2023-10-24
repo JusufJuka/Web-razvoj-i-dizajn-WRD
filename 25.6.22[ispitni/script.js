@@ -12,6 +12,8 @@ makeRedove = (obj) => {
     <div class="ponudaa"><button onclick="upisiDestinaciju(${obj.id})" class="ponuda-dugme">Odaberi ponudu</button></div>
     </article>`;
 };
+
+//testna proba za git
 getPonude = async () => {
   const url = "https://restapiexample.wrd.app.fit.ba/Ispit20220625/Get6Ponuda";
   const response = await fetch(url);
