@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>fixing balls</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
@@ -21,33 +22,7 @@
         <div class=" navigacija" id="dugme-dole" onclick="Dole()"> Dole </div>
     </div>
 
-    <script>
-        var loptica = document.getElementById("lopta");
-
-        function Gore() {
-
-            var PozicijaTopString = window.getComputedStyle(lopta).top;
-            var PozicijaTopNumber = parseInt(PozicijaTopString);
-            loptica.style.top = PozicijaTopNumber - 20 + "px";
-        }
-
-        function Dole() {
-            var PozicijaTop = loptica.offsetTop;
-            loptica.style.top = PozicijaTop + 20 + "px";
-        }
-        function Lijevo() {
-
-            var PozicijaLijevo = loptica.offsetLeft;
-            loptica.style.left = PozicijaLijevo - 20 + "px";
-        }
-
-        function Desno() {
-            var PozicijaLijevo = loptica.offsetLeft;
-            loptica.style.left = PozicijaLijevo + 20 + "px";
-        }
-
-
-    </script>
+    <script src="funkcionalnosti.js"></script>
 
 </body>
 
